@@ -26,7 +26,7 @@ def knapsack_problem():
                 else:
                     table[i + 1][capacity] = previous_items_value
         
-        # You can find the solution by going up the table and to the left
+        # You can deduce the solution by going up the table and to the left
         # Whenever the value changes, you know that the new item at that row was added
         solution = []
         capacity = max_capacity
